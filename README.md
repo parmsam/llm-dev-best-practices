@@ -1,8 +1,6 @@
 # Best Practices for LLM-based Development
 
 
-# Best Practices for LLM-based Development
-
 This document outlines best practices that I’ve learned for developing
 applications using Large Language Models (LLMs). It will cover various
 aspects including prompt engineering, model selection, performance
@@ -26,16 +24,28 @@ will be updated as I get more experience in this area.
 
 ## Use an LLM evaluation framework
 
-- As you make updates to your system prompt tools, and other LLM
-  parameters, you should not manually check the performance of your
-  LLM-based applications. Instead, use an evaluation framework to
-  automate this process.
-  - If you’re using R, I recommend the
-    [`vitals`](https://vitals.tidyverse.org/index.html) package and if
-    you use Python, I recommend the
-    [`Inspect`](https://inspect.aisi.org.uk/) library.
+- Avoid manually testing your LLM applications when making changes to
+  system prompts, tools, or model parameters. Manual evaluation is
+  time-consuming, inconsistent, and doesn’t scale as your application
+  grows.
+- Implement an automated evaluation framework to systematically measure
+  performance across different configurations and track improvements
+  over time.
+- Choose an evaluation framework based on your technology stack:
+  - **R users**: Use the
+    [`vitals`](https://vitals.tidyverse.org/index.html) package for
+    comprehensive LLM evaluation workflows
+  - **Python users**: Use the [`Inspect`](https://inspect.aisi.org.uk/)
+    library for rigorous AI system evaluation
+- Set up evaluation datasets that represent real-world use cases and
+  edge cases your application might encounter.
+- Track key metrics consistently (accuracy, relevance, safety, latency)
+  to make data-driven decisions about model improvements.
 
 ## Resources I’ve enjoyed
 
-- https://ellmer.tidyverse.org/articles/prompt-design.html#best-practices
-- 
+- [Ellmer vignette on Prompt
+  Design](https://ellmer.tidyverse.org/articles/prompt-design.html)
+- [Max Kuhn - Measuring LLM Effectiveness - Presented at The New York
+  Data Science & AI Conference Presented by Lander Analytics (August 27,
+  2025)](https://www.youtube.com/embed/TQKbaIR-8J4)
