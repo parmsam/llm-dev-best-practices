@@ -52,9 +52,17 @@ set the context and guidelines for how the model should respond to
 - Break down complex tasks into smaller, manageable components. This
   makes it easier to test and refine individual parts of your
   application.
+- Follow the SolveIt approach
+  (https://parmsam.github.io/garden/solve-it) for iterative LLM-assisted
+  code development and problem-solving:
+  - Understand the Problem
+  - Devise a Plan
+  - Carry Out the Plan
+  - Look Back and Reflect
 - Start with a minimal viable product (MVP) and gradually add features
   and complexity based on user feedback and testing. The same principles
-  from good software development apply here.
+  from [lean startups](https://en.wikipedia.org/wiki/Lean_startup) apply
+  here.
 
 ## Use an LLM evaluation framework
 
@@ -97,3 +105,5 @@ set the context and guidelines for how the model should respond to
   blog](https://hamel.dev/blog/posts/field-guide/)
 - [Here’s how I use LLMs to help me write code from Simon Willison’s
   blog](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
+- [Lean Startup methodology Wiki
+  article](https://en.wikipedia.org/wiki/Lean_startup)
