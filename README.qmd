@@ -7,11 +7,27 @@ This document outlines best practices that I've learned for developing applicati
 
 ## System prompts
 
+`System prompts` define general behavior for your LLM application. They set the context and guidelines for how the model should respond to `user prompts` (which usually ask specific questions).
+
 - Place each system prompt in a separate Markdown (`.md`) file for better organization and readability.
 - Use a consistent naming convention for your system prompt files to easily identify their purpose. I usually go with `system-prompt.md`.
 - Commit your system prompts to version control (such as `git`) to track changes over time.
-- Consider adding toggles into your system prompts to enable or disable certain features or behaviors. This can work well with interpolating variables into your prompts.
+- Interpolate dynamic data into your system prompts to customize behavior based on context. This can include user preferences, application state, or specific instructions for the task at hand.
+    - Consider adding toggles into your system prompts to enable or disable certain features or behaviors. This can work well with interpolating variables into your prompts.
     - For example, you might have a toggle for verbosity, where setting `verbose=true` in your prompt would instruct the model to provide more detailed responses.
+- Be explicit and clear in your system prompts to minimize ambiguity. Clearly define the role of the model, the expected format of responses, and any constraints or guidelines it should follow. There are many frameworks and guidelines available online to help with this.
+
+### Curate the context
+
+- If you want your LLM to provide accurate and relevant responses, it's crucial to provide it with the right context. This can be done by including relevant information in the system prompt (`prompt stuffing`) or by using techniques like retrieval-augmented generation (`RAG`) to fetch pertinent data from external sources.
+- Provide examples of desired outputs in the system prompt to guide the model's responses.
+- Provide sufficient background information and details relevant to the target user group.
+- Regularly update the context to ensure it remains relevant and accurate as your application evolves.
+
+## Work in small pieces and iterate
+
+- Break down complex tasks into smaller, manageable components. This makes it easier to test and refine individual parts of your application.
+- Start with a minimal viable product (MVP) and gradually add features and complexity based on user feedback and testing. The same principles from good software development apply here.
 
 ## Use an LLM evaluation framework
 
@@ -22,6 +38,11 @@ This document outlines best practices that I've learned for developing applicati
     - **Python users**: Use the [`Inspect`](https://inspect.aisi.org.uk/) library for rigorous AI system evaluation
 - Set up evaluation datasets that represent real-world use cases and edge cases your application might encounter.
 - Track key metrics consistently (accuracy, relevance, safety, latency) to make data-driven decisions about model improvements.
+
+## Know your models and their limitations
+
+- Different LLMs have varying strengths and weaknesses. Familiarize yourself with the capabilities and limitations of the models you are using. 
+- Important factors include token limits, knowledge cut-off dates, release date, cost, and specific biases. This knowledge is acquired through reading official documentation, online research, and experimentation.
 
 ## Resources I've enjoyed
 
