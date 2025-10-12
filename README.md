@@ -52,9 +52,9 @@ set the context and guidelines for how the model should respond to
 - Break down complex tasks into smaller, manageable components. This
   makes it easier to test and refine individual parts of your
   application.
-- Follow the SolveIt approach
-  (https://parmsam.github.io/garden/solve-it) for iterative LLM-assisted
-  code development and problem-solving:
+- Follow the [SolveIt
+  approach](https://parmsam.github.io/garden/solve-it) for iterative
+  LLM-assisted code development and problem-solving:
   - Understand the Problem
   - Devise a Plan
   - Carry Out the Plan
@@ -107,3 +107,6 @@ set the context and guidelines for how the model should respond to
   blog](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 - [Lean Startup methodology Wiki
   article](https://en.wikipedia.org/wiki/Lean_startup)
+- [The Solveit approach turns frustrating AI conversations into learning
+  experiences from Rens’
+  Blog](http://rensdimmendaal.com/posts/solveit-course-key-take-aways)
