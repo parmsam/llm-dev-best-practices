@@ -81,10 +81,10 @@ set the context and guidelines for how the model should respond to
 - Different LLMs have varying strengths and weaknesses. Familiarize
   yourself with the capabilities and limitations of the models you are
   using.
-- Important factors include token limits, knowledge cut-off dates,
-  release date, cost, and specific biases. This knowledge is acquired
-  through reading official documentation, online research, and
-  experimentation.
+- Important factors include token limits, training cut-off dates,
+  release date, cost, rate limits, modalities, and specific biases. This
+  knowledge is acquired through reading official documentation, online
+  research, and experimentation.
 
 ## Resources I’ve enjoyed
 
@@ -93,3 +93,7 @@ set the context and guidelines for how the model should respond to
 - [Max Kuhn - Measuring LLM Effectiveness - Presented at The New York
   Data Science & AI Conference Presented by Lander Analytics (August 27,
   2025)](https://www.youtube.com/embed/TQKbaIR-8J4)
+- [A Field Guide to Rapidly Improving AI Products from Humal Husain’s
+  blog](https://hamel.dev/blog/posts/field-guide/)
+- [Here’s how I use LLMs to help me write code from Simon Willison’s
+  blog](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
