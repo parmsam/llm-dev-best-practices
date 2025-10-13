@@ -55,7 +55,7 @@ This document outlines best practices that I've learned for developing applicati
 - Different LLMs have varying strengths and weaknesses. Familiarize yourself with the capabilities and limitations of the models you are using.
 - Important factors include token limits, training cut-off dates, release date, cost, rate limits, modalities, and specific biases. This knowledge is acquired through reading official documentation, online research, and experimentation.
 
-## Resources I've enjoyed
+## Resources I've enjoyed learning from
 
 - [Ellmer vignette on Prompt Design](https://ellmer.tidyverse.org/articles/prompt-design.html)
 - [Max Kuhn - Measuring LLM Effectiveness - Presented at The New York Data Science & AI Conference Presented by Lander Analytics (August 27, 2025)](https://www.youtube.com/embed/TQKbaIR-8J4)
