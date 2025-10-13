@@ -71,18 +71,16 @@ set the context and guidelines for how the model should respond to
   time-consuming, inconsistent, and doesn’t scale as your application
   grows.
 - Implement an automated evaluation framework to systematically measure
-  performance across different configurations and track improvements
-  over time.
+  performance across different configurations and track improvements over time.
 - Choose an evaluation framework based on your technology stack:
-  - **R users**: Use the
-    [`vitals`](https://vitals.tidyverse.org/index.html) package for
-    comprehensive LLM evaluation workflows
-  - **Python users**: Use the [`Inspect`](https://inspect.aisi.org.uk/)
-    library for rigorous AI system evaluation
-- Set up evaluation datasets that represent real-world use cases and
-  edge cases your application might encounter.
-- Track key metrics consistently (accuracy, relevance, safety, latency)
-  to make data-driven decisions about model improvements.
+  - **R users**: Use the [`vitals`](https://vitals.tidyverse.org/index.html) package for comprehensive LLM evaluation workflows
+  - **Python users**: Use the [`Inspect`](https://inspect.aisi.org.uk/) library for rigorous AI system evaluation
+- Set up evaluation datasets that represent real-world use cases and edge cases your application might encounter.
+- Track key metrics consistently (accuracy, relevance, safety, latency) to make data-driven decisions about model improvements.
+
+### Maintain your evaluation datasets
+
+- Regularly update your evaluation datasets to reflect changes in user needs, application features, and model capabilities.
 
 ## Know your models and their limitations
 
