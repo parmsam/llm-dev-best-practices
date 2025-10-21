@@ -50,14 +50,34 @@ This document outlines best practices that I've learned for developing applicati
 - Your evaluation datasets should include a mix of questions that the model can answer and questions that it cannot. This helps assess the model's ability to handle uncertainty and avoid hallucinations. 
 - You can check if the model appropriately indicates when it doesn't know the answer or when a question is outside its knowledge scope.
 
-### Maintain your knowledge store
+## Maintain your knowledge store
 
-- If your application uses a knowledge base or retrieval system to provide context to the LLM, ensure that this knowledge store is regularly updated and maintained. This includes adding new information, removing outdated content, and ensuring data quality. This is an easy aspect to overlook but is crucial for maintaining the accuracy and relevance of your LLM's responses.
+- If your application uses a knowledge base or retrieval system to provide context to the LLM, ensure that this knowledge store is regularly updated and maintained.      
+  - This includes adding new information, removing outdated content, and ensuring data quality. This is an easy aspect to overlook but is crucial for maintaining the accuracy and relevance of your LLM's responses.
 
 ## Know your models and their limitations
 
 - Different LLMs have varying strengths and weaknesses. Familiarize yourself with the capabilities and limitations of the models you are using.
+- This may be obvious but choose the right model for the task at hand. For example, use models optimized for R code generation when building R coding assistants.
+  - Use smaller, cheaper models for simple tasks and reserve powerful models for complex ones.
 - Important factors include token limits, training cut-off dates, release date, cost, rate limits, modalities, and specific biases. This knowledge is acquired through reading official documentation, online research, and experimentation.
+
+## Security and Privacy
+
+- Store API keys and sensitive credentials in environment variables or secure credential stores, never in code
+- Implement data anonymization and ensure compliance with privacy regulations (GDPR, CCPA) when sending user data to LLM APIs
+- Validate and sanitize user inputs to prevent prompt injection attacks for applications that external users can interact with
+
+## Production Deployment
+
+- Consider caching LLM responses for repeated queries to reduce costs and improve performance
+- Set up monitoring for response times, error rates, token usage, and costs
+- Design fallback strategies when primary LLM services are unavailable
+
+## Use Transparency
+
+- Clearly communicate when and how LLMs are being used in your application
+- Provide users with information about the solution's capabilities and limitations
 
 ## Resources I've enjoyed learning from
 
