@@ -50,6 +50,10 @@ This document outlines best practices that I've learned for developing applicati
 - Your evaluation datasets should include a mix of questions that the model can answer and questions that it cannot. This helps assess the model's ability to handle uncertainty and avoid hallucinations. 
 - You can check if the model appropriately indicates when it doesn't know the answer or when a question is outside its knowledge scope.
 
+### Maintain your knowledge store
+
+- If your application uses a knowledge base or retrieval system to provide context to the LLM, ensure that this knowledge store is regularly updated and maintained. This includes adding new information, removing outdated content, and ensuring data quality. This is an easy aspect to overlook but is crucial for maintaining the accuracy and relevance of your LLM's responses.
+
 ## Know your models and their limitations
 
 - Different LLMs have varying strengths and weaknesses. Familiarize yourself with the capabilities and limitations of the models you are using.
