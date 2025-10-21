@@ -79,6 +79,17 @@ This document outlines best practices that I've learned for developing applicati
 - Clearly communicate when and how LLMs are being used in your application
 - Provide users with information about the solution's capabilities and limitations
 
+## Structured Outputs
+
+Structured outputs enable LLMs to return responses in predictable, machine-readable formats rather than free-form text. This dramatically improves reliability and makes downstream processing easier by guaranteeing valid output that matches your schema.
+
+- Use structured outputs when you need data extraction, classification tasks, form filling, API responses, or multi-step workflows where outputs become inputs for subsequent steps.
+- Many modern LLM providers offer native structured output support where you define JSON schemas and the provider guarantees schema compliance. This is more reliable than prompt-based approaches.
+- Keep schemas simple, as complex nested structures increase failure rates. Provide clear field descriptions to help the model understand what each field represents.
+- For categorical data, constrain possible values to valid options.
+- Make fields optional when appropriate to reduce hallucination risk because models may invent plausible but incorrect data when forced to fill required fields they lack information for.
+- Validate outputs even with structured output APIs to verify business logic constraints beyond schema compliance.
+
 ## Resources I've enjoyed learning from
 
 - [Ellmer vignette on Prompt Design](https://ellmer.tidyverse.org/articles/prompt-design.html)
