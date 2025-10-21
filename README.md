@@ -74,7 +74,7 @@ This document outlines best practices that I've learned for developing applicati
 - Set up monitoring for response times, error rates, token usage, and costs
 - Design fallback strategies when primary LLM services are unavailable
 
-## Use Transparency
+## User Transparency
 
 - Clearly communicate when and how LLMs are being used in your application
 - Provide users with information about the solution's capabilities and limitations
