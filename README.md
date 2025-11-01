@@ -74,6 +74,15 @@ This document outlines best practices that I've learned for developing applicati
 - Set up monitoring for response times, error rates, token usage, and costs
 - Design fallback strategies when primary LLM services are unavailable
 
+### Track Token Usage and Costs in Real-Time
+
+Monitoring LLM costs is crucial for production applications, as token usage can quickly accumulate and lead to unexpected expenses. Providing cost transparency to internal users can also build trust and help them understand the value of your service.
+
+- Display real-time token usage and costs directly in your application interface for user transparency
+- Use built-in tracking methods from LLM libraries like `ellmer` (R) or `chatlas` (Python) that provide `get_tokens()` and `get_cost()` methods
+- Implement usage limits or per-user cost budgets to control expenses
+- Store usage data for analytics, optimization, or ROI calculations
+
 ## User Transparency
 
 - Clearly communicate when and how LLMs are being used in your application
