@@ -92,8 +92,9 @@ Comprehensive logging is useful for debugging, monitoring, and improving LLM app
 - Log LLM evaluation results and performance metrics to track model effectiveness over time. See [LLM Evaluation](#use-an-llm-evaluation-framework) section for more details.
 - Implement structured logging with consistent formats to enable easy parsing and analysis
 - Set up alerts for unusual patterns like high error rates, excessive token usage, or poor response quality
-- Consider privacy implications when logging user data and implement appropriate anonymization or retention policies, if you have an external user-facing application.
-- Use centralized logging systems that can handle the volume and complexity of LLM application data
+- Consider privacy implications when logging user data and implement appropriate anonymization or retention policies, if you have an external user-facing application or have an internal application that handles sensitive data.
+- Use centralized logging systems that can handle the volume and complexity of LLM  application data
+- Observability frameworks like [OpenTelemetry](https://opentelemetry.io/) can be included in applications to provide metrics, traces, and logs in a unified manner. OpenTelemetry is being integrated into Shiny for R and Python.
 
 ## User Transparency
 
