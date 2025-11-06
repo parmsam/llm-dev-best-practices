@@ -83,6 +83,18 @@ Monitoring LLM costs is crucial for production applications, as token usage can 
 - Implement usage limits or per-user cost budgets to control expenses
 - Store usage data for analytics, optimization, or ROI calculations
 
+## Logging and Observability
+
+Comprehensive logging is useful for debugging, monitoring, and improving LLM applications. Unlike traditional applications, LLM interactions involve complex prompts, responses, and contextual data.
+
+- Consider logging all LLM interactions including system prompts, user inputs, model responses, token usage, and response times, as well as any errors encountered.
+- Include conversation context and metadata (user ID, session ID, model version, temperature settings) to enable thorough debugging
+- Log LLM evaluation results and performance metrics to track model effectiveness over time. See [LLM Evaluation](#use-an-llm-evaluation-framework) section for more details.
+- Implement structured logging with consistent formats to enable easy parsing and analysis
+- Set up alerts for unusual patterns like high error rates, excessive token usage, or poor response quality
+- Consider privacy implications when logging user data and implement appropriate anonymization or retention policies, if you have an external user-facing application.
+- Use centralized logging systems that can handle the volume and complexity of LLM application data
+
 ## User Transparency
 
 - Clearly communicate when and how LLMs are being used in your application
